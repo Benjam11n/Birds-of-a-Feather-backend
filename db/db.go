@@ -1,6 +1,7 @@
 package db
 
 import (
+	"os"
 	"time"
 
 	"gorm.io/driver/postgres"
@@ -81,8 +82,9 @@ type CommunityMember struct {
 
 func InitDB() {
 	var err error
+	databaseURL := os.Getenv("DATABASE_URL")
 	DB, err = gorm.Open(postgres.New(postgres.Config{
-		DSN:                  "user=postgres password=(Passcode336133) dbname=Birds-of-a-Feather port=5432 sslmode=disable host=localhost",
+		DSN:                  databaseURL,
 		PreferSimpleProtocol: true, // disables implicit prepared statement usage
 	}), &gorm.Config{})
 
