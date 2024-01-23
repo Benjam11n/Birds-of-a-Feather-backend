@@ -1,0 +1,11 @@
+PUT http://localhost:8080/posts/1
+content-type: application/json
+
+{
+    "title" : "birdyyy",
+    "content" : "birdyyy",
+    "date_created" : "2015-01-01T15:30:00.000Z",
+    "edited" : true,
+    "likes" : 10000,
+    "tags" : "budgerigars"
+}

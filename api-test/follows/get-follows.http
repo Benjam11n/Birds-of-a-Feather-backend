@@ -1,0 +1,2 @@
+GET http://localhost:8080/follows
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGUxQGV4YW1wbGUuY29tIiwiZXhwIjoxNzA2MDE0NzA2LCJ1c2VySWQiOjJ9.toU26b8F87tfnc0yoUZHLIBWVqboAbWT6RWqezCoXMg

@@ -1,0 +1,8 @@
+PUT http://localhost:8080/posts/1/votes
+content-type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGUxQGV4YW1wbGUuY29tIiwiZXhwIjoxNzA0NjI2OTg0LCJ1c2VySWQiOjJ9.8l214O_GqyiGyIb5OVSjfmH7Jf71sVvzKvUyGa1fSyA
+
+{
+    "userId": 2,
+    "voteValue": -1
+}

@@ -1,0 +1,7 @@
+POST http://localhost:8080/replies/2/votes
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGU0QGV4YW1wbGUuY29tIiwiZXhwIjoxNzA0OTE0NDM5LCJ1c2VySWQiOjV9.tH5vIdYLjK8GmtkVpqPb9rm7rHGQCYhTQYSXMLejO-M
+
+{
+    "voteValue": 1
+}

@@ -1,0 +1,9 @@
+PUT http://localhost:8080/communities/13
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJleHAiOjE3MDUyNTUyODYsInVzZXJJZCI6MX0.RwAgj-2bbLCYuP8UtSh7Fw8j056Nq5i-rI0Td0g1uUw
+
+{
+    "title": "Budgerigars MY",
+    "description": "Budgerigar Lovers of MY hohohoho"
+}
+

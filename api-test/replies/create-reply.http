@@ -1,0 +1,9 @@
+POST http://localhost:8080/posts/1/replies
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJleHAiOjE3MDQyOTAyNjMsInVzZXJJZCI6MX0.7zpe_Sf1xq5lhW6EJW_rnYjUXsJJRr495B1_3TqIVT8
+
+{
+    "content": "bird",
+    "userId": 1,
+    "createdAt" : "2015-01-01T15:30:00.000Z"
+}

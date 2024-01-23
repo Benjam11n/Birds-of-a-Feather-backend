@@ -1,0 +1,2 @@
+DELETE http://localhost:8080/replies/2/votes
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGU0QGV4YW1wbGUuY29tIiwiZXhwIjoxNzA0OTE4Njk1LCJ1c2VySWQiOjV9._3SIyGNEEddkeSOPrnINbtW7Sqw1ki5P3jS1_cw6OcY

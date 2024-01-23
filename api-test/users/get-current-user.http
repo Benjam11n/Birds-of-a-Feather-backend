@@ -1,0 +1,2 @@
+GET http://localhost:8080/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJleHAiOjE3MDYwMDYwNDcsInVzZXJJZCI6MH0.niMuXfIuitxQfrfhmrWd6DKy0S6jw2xJgtnqZBa3s6k

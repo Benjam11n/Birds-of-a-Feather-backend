@@ -1,0 +1,2 @@
+DELETE http://localhost:8080/communities/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJleHAiOjE3MDUyMTI4NDksInVzZXJJZCI6MX0.-F6uOEiCqfEdfqUy2Tq9OVGTMLyuQEWZepwWdENs9M0

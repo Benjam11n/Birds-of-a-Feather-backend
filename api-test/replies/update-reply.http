@@ -1,0 +1,7 @@
+PUT http://localhost:8080/posts/1/replies/4
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJleHAiOjE3MDQyOTM0OTgsInVzZXJJZCI6MX0.scehehmFUIdCKRJxlPDmFaSf6_eLUICkUcFlHld73vc
+
+{
+    "content": "This is a reply"
+}

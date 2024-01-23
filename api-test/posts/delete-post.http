@@ -1,0 +1,3 @@
+DELETE http://localhost:8080/posts/9
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGVAZXhhbXBsZS5jb20iLCJleHAiOjE3MDQyODQ1MjksInVzZXJJZCI6MX0.PZqARAJESUqbxWYPD9z3Mk2zohevG9qn_AfzDiiEOdM
+
