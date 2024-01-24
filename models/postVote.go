@@ -25,7 +25,7 @@ func (pv *PostVote) Save() error {
 func (pv *PostVote) Update() error {
 	db := db.DB
 	fmt.Println(pv.VoteValue, pv.ID)
-	result := db.Model(pv).Where("user_id = ?", pv.UserId).Updates(PostVote{VoteValue: pv.VoteValue})
+	result := db.Model(pv).Where("user_id = ? AND post_id = ?", pv.UserId, pv.PostId).Updates(PostVote{VoteValue: pv.VoteValue})
 	return result.Error
 }
 
