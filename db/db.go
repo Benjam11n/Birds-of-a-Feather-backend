@@ -83,7 +83,7 @@ type CommunityMember struct {
 func InitDB() {
 	var err error
 	databaseURL := os.Getenv("DATABASE_URL")
-	// databaseURL := "postgres://postgres:(Passcode336133)@localhost:5432/Birds-of-a-Feather"
+
 	DB, err = gorm.Open(postgres.New(postgres.Config{
 		DSN:                  databaseURL,
 		PreferSimpleProtocol: true, // disables implicit prepared statement usage
