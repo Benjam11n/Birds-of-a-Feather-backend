@@ -41,21 +41,21 @@ func (u *User) Save() error {
 	return result.Error
 }
 
-func (u *User) ValidateCredentials() (string, error) {
+func (u *User) ValidateCredentials() (*User, error) {
 	db := db.DB
-	var retrievedPassword string
-	result := db.Model(u).Select("password").Where("email = ?", u.Email).First(&retrievedPassword)
+	var retrievedUser User
+	result := db.Model(u).Where("email = ?", u.Email).First(&retrievedUser)
 	if result.Error != nil {
-		return "", result.Error
+		return nil, result.Error
 	}
 
-	passwordIsValid := utils.CheckPasswordHash(u.Password, retrievedPassword)
+	passwordIsValid := utils.CheckPasswordHash(u.Password, retrievedUser.Password)
 
 	if !passwordIsValid {
-		return "", errors.New("credentials invalid")
+		return nil, errors.New("credentials invalid")
 	}
 
-	return retrievedPassword, nil
+	return &retrievedUser, nil
 }
 
 func (u *User) Update() error {
