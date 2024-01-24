@@ -44,7 +44,7 @@ func (u *User) Save() error {
 func (u *User) ValidateCredentials() (*User, error) {
 	db := db.DB
 	var retrievedUser User
-	result := db.Where("email = ?", u.Email).First(&retrievedUser)
+	result := db.Model(u).Where("email = ?", u.Email).First(&retrievedUser)
 	if result.Error != nil {
 		return nil, result.Error
 	}
