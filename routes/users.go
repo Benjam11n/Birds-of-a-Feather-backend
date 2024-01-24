@@ -40,7 +40,6 @@ func Login(context *gin.Context) {
 		context.JSON(http.StatusBadRequest, gin.H{"message": err.Error()})
 		return
 	}
-
 	retrievedUser, err := user.ValidateCredentials()
 
 	if err != nil {
@@ -134,6 +133,7 @@ func UpdateUserPassword(context *gin.Context) {
 	}
 
 	// Bind the JSON data
+	var user models.User
 	var updatedUser models.UpdateUserPassword
 	if err := context.ShouldBindJSON(&updatedUser); err != nil {
 		context.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
@@ -141,7 +141,15 @@ func UpdateUserPassword(context *gin.Context) {
 	}
 
 	updatedUser.ID = uint(userId)
+	user.Password = updatedUser.OldPassword
+	user.Email = updatedUser.Email
 
+	_, err = user.ValidateCredentials()
+
+	if err != nil {
+		context.JSON(http.StatusUnauthorized, gin.H{"message": "not authorized"})
+		return
+	}
 	// Call the Update method to update the user in the database
 	err = updatedUser.Update()
 	if err != nil {

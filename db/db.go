@@ -14,7 +14,7 @@ type User struct {
 	gorm.Model
 	Name      string    `json:"name"`
 	Email     string    `json:"email"`
-	Password  string    `json:"-"`
+	Password  string    `json:"password"`
 	UserBio   string    `json:"userBio"`
 	Birthday  time.Time `json:"birthday"`
 	AvatarUrl string    `json:"avatarUrl"`
@@ -83,6 +83,7 @@ type CommunityMember struct {
 func InitDB() {
 	var err error
 	databaseURL := os.Getenv("DATABASE_URL")
+	// databaseURL := "postgres://postgres:(Passcode336133)@localhost:5432/Birds-of-a-Feather"
 	DB, err = gorm.Open(postgres.New(postgres.Config{
 		DSN:                  databaseURL,
 		PreferSimpleProtocol: true, // disables implicit prepared statement usage

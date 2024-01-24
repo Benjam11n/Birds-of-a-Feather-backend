@@ -15,7 +15,7 @@ type User struct {
 	gorm.Model
 	Name      string    `json:"name"`
 	Email     string    `json:"email"`
-	Password  string    `gorm:"password" json:"-"`
+	Password  string    `gorm:"password" json:"password"`
 	UserBio   string    `json:"userBio"`
 	Birthday  time.Time `json:"birthday"`
 	AvatarUrl string    `json:"avatarUrl"`
@@ -71,7 +71,8 @@ func (u *UpdateUserPassword) Update() error {
 		return err
 	}
 
-	result := db.Model(&User{}).Where("id = ? AND email = ? AND password = ?", u.ID, u.Email, u.OldPassword).Update("password", hashedPassword)
+	result := db.Model(&User{}).Where("id = ? AND email = ?", u.ID, u.Email).Update("password", hashedPassword)
+
 	return result.Error
 }
 

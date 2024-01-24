@@ -3,7 +3,7 @@ content-type: application/json
 
 {
     "name": "Joey",
-    "email":  "example7@example.com",
+    "email":  "example9@example.com",
     "password": "password",
     "userBio": "📌 Traveling around Asia\nCapturing moments with my camera and my feathery models\nProud owner of a stunning pair of Lovebirds – meet Peaches and Kiwi 🍑🥝\nLet's exchange photography tips, share our favorite bird shots, and maybe even organize a virtual bird photo contest! 🏆🦚"
 }

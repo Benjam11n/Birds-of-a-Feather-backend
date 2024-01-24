@@ -48,6 +48,6 @@ func GetAllUserCommunities(userId uint) ([]Community, error) {
 
 func (c *CommunityMember) Delete() error {
 	db := db.DB
-	result := db.Delete(c)
+	result := db.Delete(c, "user_id = ? AND community_id = ?", c.UserId, c.CommunityId)
 	return result.Error
 }
