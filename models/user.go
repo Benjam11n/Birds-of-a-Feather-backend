@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"example.com/benjamin/db"
-	"example.com/benjamin/utils"
+	"github.com/Benjam11n/db"
+	"github.com/Benjam11n/utils"
 	"gorm.io/gorm"
 )
 

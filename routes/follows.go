@@ -3,7 +3,7 @@ package routes
 import (
 	"net/http"
 
-	"example.com/benjamin/models"
+	"github.com/Benjam11n/models"
 	"github.com/gin-gonic/gin"
 )
 

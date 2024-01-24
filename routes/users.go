@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"example.com/benjamin/models"
-	"example.com/benjamin/utils"
+	"github.com/Benjam11n/models"
+	"github.com/Benjam11n/utils"
 	"github.com/gin-gonic/gin"
 )
 

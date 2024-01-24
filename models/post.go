@@ -1,7 +1,7 @@
 package models
 
 import (
-	"example.com/benjamin/db"
+	"github.com/Benjam11n/db"
 	"gorm.io/gorm"
 )
 

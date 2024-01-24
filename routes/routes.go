@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"example.com/benjamin/middlewares"
+	"github.com/Benjam11n/middlewares"
 	"github.com/gin-gonic/gin"
 )
 

@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"example.com/benjamin/db"
-	"example.com/benjamin/routes"
+	"github.com/Benjam11n/db"
+	"github.com/Benjam11n/routes"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )

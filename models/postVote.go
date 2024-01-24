@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"example.com/benjamin/db"
+	"github.com/Benjam11n/db"
 	"gorm.io/gorm"
 )
 

@@ -1,4 +1,4 @@
-module example.com/benjamin
+module github.com/Benjam11n
 
 go 1.21
 

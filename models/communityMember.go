@@ -1,6 +1,6 @@
 package models
 
-import "example.com/benjamin/db"
+import "github.com/Benjam11n/db"
 
 type CommunityMember struct {
 	ID          uint `gorm:"primaryKey;autoIncrement" json:"id"`

@@ -3,7 +3,7 @@ package middlewares
 import (
 	"net/http"
 
-	"example.com/benjamin/utils"
+	"github.com/Benjam11n/utils"
 	"github.com/gin-gonic/gin"
 )
 

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"example.com/benjamin/models"
+	"github.com/Benjam11n/models"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 )
