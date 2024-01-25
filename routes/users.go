@@ -19,7 +19,6 @@ func Signup(context *gin.Context) {
 		return
 	}
 
-	user.AvatarUrl = "/assets/avatars/default.jpg"
 	user.CreatedAt = time.Now().Local()
 	err = user.Save()
 

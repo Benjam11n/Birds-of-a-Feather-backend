@@ -45,10 +45,7 @@ func CreateCommunity(context *gin.Context) {
 	file, err := context.FormFile("iconUrl")
 	var avatarFilename string
 
-	if err != nil {
-		// No file uploaded, set icon to default
-		community.IconUrl = "/assets/communities/default.jpg"
-	} else {
+	if err == nil {
 		// File uploaded, proceed with saving and updating
 		avatarFilename = file.Filename
 		community.IconUrl = "/assets/communities/" + avatarFilename
