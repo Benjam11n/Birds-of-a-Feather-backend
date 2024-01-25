@@ -1,10 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/benjam11n/Birds-of-a-Feather-backend">
-    <img src="./public/Logo.jpg" alt="Logo" width="160" height="160" style="border-radius: 50%">
-  </a>
-
   <h3 align="center">Birds of a Feather Backend</h3>
 </div>
 
