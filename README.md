@@ -29,8 +29,6 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 **Disclaimer:** This README addresses the backend of the project. This repository contains the source code for the backend of the Birds of a Feather forum.
 
 ### Built With
