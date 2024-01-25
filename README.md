@@ -61,17 +61,53 @@ The feature set includes fundamental CRUD operations for data manipulation and a
 
 ## Getting Started
 
-Both the frontend and backend are hosted on Digital Ocean. You can access the frontend using the following link:
+**To run the website locally, you need to clone both the frontend and backend applications:**
 
-[**Birds of a Feather Frontend**](https://birds-of-a-feather-c5xki.ondigitalocean.app)
+**Setting up the frontend**
 
-For additional usage instructions, refer to the details provided in the Usage section below.
+- Open your terminal or command prompt.
+
+- Use the following command to clone the frontend repository: git clone https://github.com/Benjam11n/Birds-of-a-Feather-frontend
+
+- Navigate to the Project Directory.
+
+- Install Dependencies by running the command "npm install".
+
+- Open up the constants file in the frontend project and change the constant "BACKEND_URL" to "http://localhost:8080"
+
+- Run the development server by running "npm run dev"
+
+- Once the application is running, open your web browser and go to the following URL:http://localhost:5173
+
+**Setting up the Backend**
+
+- Open your terminal or command prompt.
+
+- Use the following command to clone the backend repository:
+
+- git clone https://github.com/Benjam11n/Birds-of-a-Feather-backend
+
+- Open up the project and create a `.env` file in the root of the project.
+
+- In the .env file, create a new environment variable "DATABASE_URL" and set it to your own PostgreSQL URL. For example: "postgres://postgres:password@db:5432/Birds-of-a-Feather"
+
+- Run the backend application by running the following command: "go run ."
+
+- The application will be running at the following URL:http://localhost:8080
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
 ## Usage
+
+Both the frontend and backend are hosted on Digital Ocean. You can access the frontend using the following link:
+
+[**Birds of a Feather Frontend**](https://birds-of-a-feather-c5xki.ondigitalocean.app)
+
+**Detailed usage information can be found under the usage section in this repository:**
+
+[**Github.com**](https://github.com/Benjam11n/Birds-of-a-Feather-frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,10 +133,10 @@ Docker Image Link: [**Docker hub**](https://hub.docker.com/repository/docker/ben
 
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+These are some of the awesome resources I used to build this application. Feel free to check them out!
 
-- [Gin](https://react-icons.github.io/react-icons/search)
-- [GORM](https://react-icons.github.io/react-icons/search)
-- [Postgres](https://react-icons.github.io/react-icons/search)
+- [Gin](https://github.com/gin-gonic/gin)
+- [GORM](https://github.com/go-gorm/gorm)
+- [Postgres](https://www.postgresql.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
