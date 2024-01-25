@@ -33,8 +33,6 @@
 
 **Disclaimer:** This README addresses the backend of the project. This repository contains the source code for the backend of the Birds of a Feather forum.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 The backend of this project leverages a robust stack of technologies and frameworks to deliver a modern and responsive web application. Here's a detailed overview of the key components:
@@ -54,8 +52,6 @@ The backend of this project leverages a robust stack of technologies and framewo
 - **Docker**: Employing Docker for containerization, simplifying deployment and ensuring consistent performance across various environments.
 
 The feature set includes fundamental CRUD operations for data manipulation and account-based authentication using JWT tokens, ensuring a comprehensive and secure user experience.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -95,8 +91,6 @@ The feature set includes fundamental CRUD operations for data manipulation and a
 
 - The application will be running at the following URL:http://localhost:8080
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- USAGE EXAMPLES -->
 
 ## Usage
@@ -108,8 +102,6 @@ Both the frontend and backend are hosted on Digital Ocean. You can access the fr
 **Detailed usage information can be found under the usage section in this repository:**
 
 [**Github.com**](https://github.com/Benjam11n/Birds-of-a-Feather-frontend)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
 
@@ -127,8 +119,6 @@ Website link: [**Birds of a Feather Frontend**](https://birds-of-a-feather-c5xki
 
 Docker Image Link: [**Docker hub**](https://hub.docker.com/repository/docker/benjamiiin/birds-of-a-feather-backend)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgments
@@ -138,5 +128,3 @@ These are some of the awesome resources I used to build this application. Feel f
 - [Gin](https://github.com/gin-gonic/gin)
 - [GORM](https://github.com/go-gorm/gorm)
 - [Postgres](https://www.postgresql.org/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
